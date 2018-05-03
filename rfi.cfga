@@ -1,28 +1,27 @@
 [INITIAL]
-apercaldir = '/Users/maccagni/notebooks/apercal'
+apercaldir = '/home/maccagni/apercal'
 fluxcal = ''
 polcal = ''
 target = ''
-basedir = '/Users/maccagni/Projects/ApertiF/SHARP/data/Obj5/'
-beam = ''
-rawsuvbdir = 'raw'
+basedir = '/data/maccagni/RFI/reduced/110311/'
+beam = 'B000'
+rawsubdir = 'raw'
 linesubdir = 'line'
 contsubdir = 'continuum'
 contname = ' '					#name without extension (can be .mir or fits, automatically read)
 cubename = ' '
-msfile = [' ']
+msname = ['WSRTA110311_B000.MS']
 
 [RFI]
-aperfi_pol = 'xx'                   #polarization to study
-aperfi_uvaver = True                #uv-dataset needs to be averaged down to <5000 channels 
-aperfi_uvaver_line ='channel,3669,2,3,3'
-aperfi_badant = [2,3,4]
+aperfi_rfi_flagfile= ['1110311.MS']
+aperfi_uvaver = True              	#uv-dataset needs to be averaged down to <5000 channels 
+aperfi_badant = [4]
 aperfi_rmsclip = 5
-aperfi_noise = 'rfi'
-aperfi_rfifree_min = 1.180e9           #Frequency range where to compute rms: RFI free in Hz
-aperfi_rfifree_max = 1.200e9           #Frequency range where to compute rms: RFI free in Hz
-aperfi_long_short = False
-aperfi_plot_format = '.jpg'
+aperfi_rfifree_min = 1.280e9           	#Frequency range where to compute rms: RFI free in Hz
+aperfi_rfifree_max = 1.300e9           	#Frequency range where to compute rms: RFI free in Hz
+aperfi_plot_noise = 'rfi'
+aperfi_plot_long_short = False
+
 
 [ABS]
 abs_spec_ex = True

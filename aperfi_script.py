@@ -12,6 +12,7 @@ print aperfi.rfidir
 aperfi.load_from_ms()
 aperfi.baselines_from_ms()
 aperfi.priors_flag()
+aperfi.find_rfi()
 aperfi.rfi_flag()
 
 #convert flagged dataset

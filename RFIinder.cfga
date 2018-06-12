@@ -1,0 +1,14 @@
+[INITIAL]
+rfidir = '/home/maccagni/FornaxA/MeerKAT/fa2/rfi'
+msdir = '/home/maccagni/FornaxA/MeerKAT/fa2/msdir_p1/'
+msname = ['fa2_conc.ms']
+
+[RFI]
+aperfi_rfi_flagfile= ['fa2_rfi_conc.ms']
+aperfi_uvaver = True              	#uv-dataset needs to be averaged down to <5000 channels 
+aperfi_badant = None
+aperfi_rmsclip = 5
+aperfi_rfifree_min = 1.419e9           	#Frequency range where to compute rms: RFI free in Hz
+aperfi_rfifree_max = 1.421e9           	#Frequency range where to compute rms: RFI free in Hz
+aperfi_plot_noise = 'rfi'
+aperfi_plot_long_short = False
